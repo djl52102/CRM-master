@@ -1,0 +1,8 @@
+[ 2017-03-06T21:21:33+08:00 ] ::1 /CRM/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030316s ]
+

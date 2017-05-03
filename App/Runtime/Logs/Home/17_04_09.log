@@ -1,0 +1,1872 @@
+[ 2017-04-09T11:27:25+08:00 ] ::1 /CRM/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022049s ]
+
+[ 2017-04-09T11:27:25+08:00 ] ::1 /CRM/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014628s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014837s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.223053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019741s ]
+
+[ 2017-04-09T11:27:34+08:00 ] ::1 /CRM/Home/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.1178s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id`,`accounts`,`state` FROM `crm_user` WHERE `accounts` = 'admin' AND `password` = '7c4a8d09ca3762af61e59520943dc26494f8941b' LIMIT 1   [ RunTime:0.0640s ]
+SQL: UPDATE `crm_user` SET `last_login_time`='2017-04-09 11:27:34',`last_login_ip`='0.0.0.0',`login_count`=login_count+1 WHERE `id` = 1 [ RunTime:0.0902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002016s ]
+
+[ 2017-04-09T11:27:34+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2017-04-09T11:27:35+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0278s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0006s ]
+
+[ 2017-04-09T11:27:39+08:00 ] ::1 /CRM/Home/Order/index?_=1491708455016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2017-04-09T11:27:40+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0502s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0254s ]
+
+[ 2017-04-09T11:27:44+08:00 ] ::1 /CRM/Home/Order/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-04-09T11:27:52+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0297s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:27:55+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:27:55+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:27:56+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:28:00+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:28:01+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:34:45+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:36:48+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-04-09T11:36:48+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0005s ]
+
+[ 2017-04-09T11:36:51+08:00 ] ::1 /CRM/Home/Order/index?_=1491709008647
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2017-04-09T11:36:52+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0015s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:36:55+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T11:36:58+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:36:58+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:36:59+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-09T11:37:03+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:37:03+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-09T11:37:20+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0009s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T11:37:24+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2017-04-09T11:37:25+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0005s ]
+
+[ 2017-04-09T11:37:27+08:00 ] ::1 /CRM/Home/Order/index?_=1491709044942
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2017-04-09T11:37:28+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0014s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:21:15+08:00 ] ::1 /CRM/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.056918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.057140s ]
+
+[ 2017-04-09T21:21:16+08:00 ] ::1 /CRM/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.175762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010342s ]
+
+[ 2017-04-09T21:21:23+08:00 ] ::1 /CRM/Home/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `crm_user` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id`,`accounts`,`state` FROM `crm_user` WHERE `accounts` = 'admin' AND `password` = '7c4a8d09ca3762af61e59520943dc26494f8941b' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `crm_user` SET `last_login_time`='2017-04-09 21:21:23',`last_login_ip`='0.0.0.0',`login_count`=login_count+1 WHERE `id` = 1 [ RunTime:0.1071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002510s ]
+
+[ 2017-04-09T21:21:23+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2017-04-09T21:21:24+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0154s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0007s ]
+
+[ 2017-04-09T21:21:26+08:00 ] ::1 /CRM/Home/Order/index?_=1491744083953
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-04-09T21:21:27+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0213s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:21:49+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:22:02+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:22:05+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:22:06+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:22:07+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:22:11+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T21:22:11+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:26:01+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2017-04-09T21:26:02+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0006s ]
+
+[ 2017-04-09T21:26:06+08:00 ] ::1 /CRM/Home/Order/index?_=1491744362621
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2017-04-09T21:26:08+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0016s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T21:26:35+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:26:38+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T21:26:42+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:26:42+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T21:26:43+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T21:26:46+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T21:26:46+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:26:55+08:00 ] ::1 /CRM/Home/Order/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `crm_order` (`documentary_id`,`sn`,`title`,`original`,`cost`,`enter`,`create_time`) VALUES ('2','20170405','关于百度','3096.00','3000','admin','2017-04-09 21:26:55') [ RunTime:0.0691s ]
+SQL: SHOW COLUMNS FROM `crm_order_extend` [ RunTime:0.0282s ]
+SQL: INSERT INTO `crm_order_extend` (`order_id`,`details`) VALUES ('5','关于百度&lt;br /&gt;') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2017-04-09T21:26:55+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0069s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:45:02+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2017-04-09T21:45:02+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0005s ]
+
+[ 2017-04-09T21:45:08+08:00 ] ::1 /CRM/Home/Order/index?_=1491745502666
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2017-04-09T21:45:09+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0015s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T21:45:39+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:55:39+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2017-04-09T22:55:40+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0007s ]
+
+[ 2017-04-09T22:55:42+08:00 ] ::1 /CRM/Home/Order/index?_=1491749739742
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-04-09T22:55:44+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0010s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:55:52+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:55:56+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:55:56+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:55:57+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:56:00+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:56:00+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:56:07+08:00 ] ::1 /CRM/Home/Order/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\wamp64\www\CRM\App\Home\Model\OrderModel.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2017-04-09T22:57:50+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-04-09T22:57:51+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0005s ]
+
+[ 2017-04-09T22:57:55+08:00 ] ::1 /CRM/Home/Order/index?_=1491749871363
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000387s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-04-09T22:57:57+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0010s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:58:02+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:58:04+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-09T22:58:09+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:58:09+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:58:10+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:58:14+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T22:58:14+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T22:58:25+08:00 ] ::1 /CRM/Home/Order/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-04-09T23:21:16+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2017-04-09T23:21:17+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0006s ]
+
+[ 2017-04-09T23:21:20+08:00 ] ::1 /CRM/Home/Documentary/index?_=1491751277431
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-04-09T23:21:22+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-09T23:21:22+08:00 ] ::1 /CRM/Home/Order/index?_=1491751277433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-04-09T23:21:23+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0016s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:21:34+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:21:38+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:21:41+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:21:42+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:21:43+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:21:46+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:21:46+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:21:58+08:00 ] ::1 /CRM/Home/Order/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `crm_order` (`documentary_id`,`sn`,`title`,`original`,`cost`,`enter`,`create_time`) VALUES ('1','20170304','关于腾讯','2061.00','2060','admin','2017-04-09 23:21:58') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `crm_order_extend` [ RunTime:0.0011s ]
+SQL: INSERT INTO `crm_order_extend` (`order_id`,`details`) VALUES ('6','优惠1元&lt;br /&gt;') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `crm_outlib` [ RunTime:0.0012s ]
+SQL: INSERT INTO `crm_outlib` (`product_id`,`order_sn`,`number`,`state`,`enter`) VALUES ('2','20170304','20','未处理','admin') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0009s ]
+SQL: UPDATE `crm_product` SET `inventory`=inventory=inventory-20,`inventory_out`=inventory_out=inventory_out+20 WHERE `id` = 2 [ RunTime:0.1184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2017-04-09T23:21:58+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0012s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:24:17+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:25:50+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2017-04-09T23:25:51+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0007s ]
+
+[ 2017-04-09T23:25:54+08:00 ] ::1 /CRM/Home/Order/index?_=1491751551333
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001630s ]
+
+[ 2017-04-09T23:25:56+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0011s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-09T23:26:04+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:26:07+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-09T23:26:11+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:26:11+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:26:22+08:00 ] ::1 /CRM/Home/Order/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `crm_order` (`documentary_id`,`sn`,`title`,`original`,`cost`,`enter`,`create_time`) VALUES ('5','20170404213056','10002','2760.00','2750','admin','2017-04-09 23:26:22') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `crm_order_extend` [ RunTime:0.0049s ]
+SQL: INSERT INTO `crm_order_extend` (`order_id`,`details`) VALUES ('7','政策优惠&lt;br /&gt;') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `crm_outlib` [ RunTime:0.0047s ]
+SQL: INSERT INTO `crm_outlib` (`product_id`,`order_sn`,`number`,`state`,`enter`) VALUES ('6','20170404213056','8','未处理','admin') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: UPDATE `crm_product` SET `inventory`=inventory-8,`inventory_out`=inventory_out+8 WHERE `id` = 6 [ RunTime:0.0749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-04-09T23:26:23+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0010s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:29:20+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2017-04-09T23:29:21+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0005s ]
+
+[ 2017-04-09T23:29:24+08:00 ] ::1 /CRM/Home/Order/index?_=1491751760991
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2017-04-09T23:29:26+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0009s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-09T23:43:38+08:00 ] ::1 /CRM/Home/Product/index?_=1491751760995
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000890s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.901258s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.901525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2017-04-09T23:43:39+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-09T23:43:50+08:00 ] ::1 /CRM/Home/Product/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: DELETE FROM `crm_product` WHERE `id` = 2 [ RunTime:0.0815s ]
+
+[ 2017-04-09T23:43:50+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:44:48+08:00 ] ::1 /CRM/Home/Product/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `crm_product` (`name`,`sn`,`type`,`unit`,`pro_price`,`sell_price`,`inventory_alarm`,`create_time`) VALUES ('联想ThinkPadT410','10005','数码用品','台','4500','5000','10','2017-04-09 23:44:45') [ RunTime:1.9631s ]
+SQL: SHOW COLUMNS FROM `crm_product_extend` [ RunTime:0.1362s ]
+SQL: INSERT INTO `crm_product_extend` (`product_id`,`details`) VALUES ('7','T410') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2017-04-09T23:44:48+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:44:59+08:00 ] ::1 /CRM/Home/Product/getOne
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0013s ]
+SQL: SELECT crm_product.id,crm_product.sn,crm_product.name,crm_product.type,crm_product.unit,crm_product.pro_price,crm_product.sell_price,crm_product.inventory_alarm,crm_product_extend.details FROM `crm_product` LEFT JOIN crm_product_extend ON crm_product.id=crm_product_extend.product_id  WHERE crm_product.id = '7' LIMIT 1   [ RunTime:0.0063s ]
+
+[ 2017-04-09T23:45:22+08:00 ] ::1 /CRM/Home/Product/getDetails?id=7&_=1491751760999
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT crm_product.id,crm_product.name,crm_product.sn,crm_product.type,crm_product.pro_price,crm_product.sell_price,crm_product.unit,crm_product.inventory,crm_product.inventory_alarm,crm_product.inventory_in,crm_product.inventory_out,crm_product.create_time,crm_product_extend.details FROM `crm_product` LEFT JOIN crm_product_extend ON crm_product.id=crm_product_extend.product_id  WHERE crm_product.id = '7' LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000919s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001894s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.549201s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.549443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2017-04-09T23:46:41+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-04-09T23:46:46+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:46:46+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:46:52+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:57:51+08:00 ] ::1 /CRM/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001441s ]
+
+[ 2017-04-09T23:57:52+08:00 ] ::1 /CRM/Home/Index/getTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `crm_nav` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`text`,`url`,`iconCls`,`nid` FROM `crm_nav`  [ RunTime:0.0006s ]
+
+[ 2017-04-09T23:57:55+08:00 ] ::1 /CRM/Home/Order/index?_=1491753472578
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2017-04-09T23:57:57+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0011s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:58:28+08:00 ] ::1 /CRM/Home/Documentary/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `crm_documentary` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`title`,`client_company`,`staff_name`,`way`,`evolve`,`enter`,`remark`,`create_time` FROM `crm_documentary` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_documentary` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-09T23:58:34+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:58:36+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:58:37+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-09T23:58:50+08:00 ] ::1 /CRM/Home/Order/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\CRM\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `crm_order` (`documentary_id`,`sn`,`title`,`original`,`cost`,`enter`,`create_time`) VALUES ('2','20170405','1003','345.00','330','admin','2017-04-09 23:58:50') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `crm_order_extend` [ RunTime:0.0052s ]
+SQL: INSERT INTO `crm_order_extend` (`order_id`,`details`) VALUES ('8','备注中...&lt;br /&gt;') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `crm_outlib` [ RunTime:0.0007s ]
+SQL: INSERT INTO `crm_outlib` (`product_id`,`order_sn`,`number`,`state`,`enter`) VALUES ('6','20170405','1','未处理','admin') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0008s ]
+SQL: UPDATE `crm_product` SET `inventory`=inventory-1,`inventory_out`=inventory_out+1 WHERE `id` = 6 [ RunTime:0.1057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001969s ]
+
+[ 2017-04-09T23:58:51+08:00 ] ::1 /CRM/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `crm_order` [ RunTime:0.0054s ]
+SQL: SELECT crm_order.sn,crm_order.title,crm_order.cost,crm_order.pay_state,crm_order.enter,crm_order.create_time,crm_documentary.client_company,crm_documentary.staff_name FROM `crm_order` LEFT JOIN crm_documentary ON crm_order.documentary_id=crm_documentary.id  ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_order` LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-04-09T23:58:59+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:59:01+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:59:01+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:59:11+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:59:13+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` Desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-09T23:59:13+08:00 ] ::1 /CRM/Home/Product/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+SQL: SHOW COLUMNS FROM `crm_product` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sn`,`name`,`type`,`unit`,`pro_price`,`sell_price`,`inventory`,`inventory_in`,`inventory_out`,`inventory_alarm`,`create_time` FROM `crm_product` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `crm_product` LIMIT 1   [ RunTime:0.0003s ]
+
